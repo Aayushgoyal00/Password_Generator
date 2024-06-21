@@ -3,15 +3,71 @@
 <head>
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="output.css" rel="stylesheet">
     <title>My Password Generator</title>
 </head>
 <body>
-    <h1>Welcome to My Password Generator</h1>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    <!-- Your code for the password generator goes here -->
+    <div class="flex flex-col items-center justify-center w-screen h-screen">
+
+      <p>Password Generator</p>
+
+      <div class="flex items-center   justify-center">
+        <span class="px-2">hgfreker</span>
+        <button class="fa-regular fa-copy"></button>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex items-center justify-around">
+          <p>Password Length</p>
+          <p id="range_number">7</p>
+        </div>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <!-- <div> -->
+          
+<!-- <div class="flex  items-center justify-center"> -->
+
+<ul>
+  <li>
+    <input id="link-checkbox" type="checkbox" value="">
+    <label for="link-checkbox">Includes Uppercase Letters</label>
+  </li>
+  <li>
+    <input id="link-checkbox" type="checkbox" value="">
+    <label for="link-checkbox">Includes Lowercase Letters</label>
+  </li>
+  <li>
+    <input id="link-checkbox" type="checkbox" value="">
+    <label for="link-checkbox">Includes Numbers</label>
+  </li>
+  <li>
+    <input id="link-checkbox" type="checkbox" value="">
+    <label for="link-checkbox">Includes Symbols</label>
+  </li>
+</ul>
+
+<div id="strength_of_password" class="flex items-center justify-around">
+  <p>Strength</p>
+  <div id="strength_color" class="rounded-full bg-black w-full">ggg</div>
+</div>
+<div>
+          <button id="generate_password">Generate Password</button>
+          
+          </div>
+ 
+  
+<!-- 
+          <ul>
+            <li>Include Uppercase Letters</li>
+            <li>Include Lowercase Letters</li>
+            <li>Include Numbers</li>
+            <li>Include Symbols</li>
+          </ul> -->
+
+        <!-- </div> -->
+      </div>
+    </div>
     
+    <script src="https://kit.fontawesome.com/862971273a.js" crossorigin="anonymous"></script>  
 </body>
 </html>

@@ -2,7 +2,12 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'back': "url('beautiful-sunset.png')",
+        
+      }
+    },
   },
   plugins: [],
 }

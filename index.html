@@ -5,23 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
     <title>My Password Generator</title>
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+NZ:wght@100..400&display=swap');
+      
+      body {
+        font-family: 'Lato', sans-serif;
+        color: beige;
+      }
+      </style>
+      
 </head>
 <body>
-    <div class="flex flex-col items-center justify-center w-screen h-screen">
+    <div class="flex  items-center justify-center w-screen h-screen bg-back bg-cover">
+<div class="flex items-center justify-center flex-col backdrop-blur-md bg-transparent border p-3 rounded-md" >
+      <p class="text-white font-bold text-xl  ">Password Generator</p>
 
-      <p>Password Generator</p>
-
-      <div class="flex items-center   justify-center">
-        <span class="px-2">hgfreker</span>
-        <button class="fa-regular fa-copy"></button>
+      <div class="flex items-center w-full justify-around bg-orange-200 rounded ">
+        <span class="px-2 text-green-700">hgfreker</span>
+        <button class="fa-regular fa-copy "></button>
       </div>
-      <div class="flex flex-col items-center justify-center">
-        <div class="flex items-center justify-around">
+      <div class="flex flex-col items-center justify-center ">
+        <div class="flex items-center justify-around w-full">
           <p>Password Length</p>
-          <p id="range_number">7</p>
+          <output id="range_value">4</output>
         </div>
         <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <input type="range" min="1" max="20" checked="1" class="slider" id="myRange">
         </div>
         <!-- <div> -->
           
@@ -29,45 +39,35 @@
 
 <ul>
   <li>
-    <input id="link-checkbox" type="checkbox" value="">
-    <label for="link-checkbox">Includes Uppercase Letters</label>
+    <input id="upperalpha1" type="checkbox"  >
+    <label for="upperalpha1">Includes Uppercase Letters</label>
   </li>
   <li>
-    <input id="link-checkbox" type="checkbox" value="">
-    <label for="link-checkbox">Includes Lowercase Letters</label>
+    <input id="loweralpha1" type="checkbox" >
+    <label for="loweralpha1">Includes Lowercase Letters</label>
   </li>
   <li>
-    <input id="link-checkbox" type="checkbox" value="">
-    <label for="link-checkbox">Includes Numbers</label>
+    <input id="numbers1" type="checkbox" >
+    <label for="numbers1">Includes Numbers</label>
   </li>
   <li>
-    <input id="link-checkbox" type="checkbox" value="">
-    <label for="link-checkbox">Includes Symbols</label>
+    <input id="symbols1" type="checkbox" >
+    <label for="symbols1">Includes Symbols</label>
   </li>
 </ul>
 
-<div id="strength_of_password" class="flex items-center justify-around">
+<div id="strength_of_password" class="flex items-center justify-around w-full">
   <p>Strength</p>
-  <div id="strength_color" class="rounded-full bg-black w-full">ggg</div>
+  <div id="strength_color" class="rounded-full bg-black w-5 h-5"></div>
 </div>
 <div>
           <button id="generate_password">Generate Password</button>
           
           </div>
- 
-  
-<!-- 
-          <ul>
-            <li>Include Uppercase Letters</li>
-            <li>Include Lowercase Letters</li>
-            <li>Include Numbers</li>
-            <li>Include Symbols</li>
-          </ul> -->
-
-        <!-- </div> -->
       </div>
     </div>
-    
+  </div>
     <script src="https://kit.fontawesome.com/862971273a.js" crossorigin="anonymous"></script>  
+    <script src="script.js"></script>
 </body>
 </html>

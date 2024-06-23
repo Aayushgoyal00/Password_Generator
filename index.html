@@ -19,16 +19,16 @@
 <body>
     <div class="flex  items-center justify-center w-screen h-screen bg-back bg-cover">
 <div class="flex items-center justify-center flex-col backdrop-blur-md bg-transparent border p-3 rounded-md" >
-      <p class="text-white font-bold text-xl  ">Password Generator</p>
+      <p class="text-white underline font-bold text-xl  mb-1">Password Generator</p>
 
-      <div class="flex items-center w-full justify-around bg-orange-200 rounded ">
-        <span class="px-2 text-green-700">hgfreker</span>
-        <button class="fa-regular fa-copy "></button>
+      <div class="flex items-center w-full justify-around bg-slate-800 rounded px-3">
+        <span class="px-2 text-green-500" id="generated_password">Temp_Password</span>
+        <button class="fa-regular fa-copy " id="clipboard_button" class="hover:scale-105"></button>
       </div>
       <div class="flex flex-col items-center justify-center ">
         <div class="flex items-center justify-around w-full">
           <p>Password Length</p>
-          <output id="range_value">4</output>
+          <output id="range_value">11</output>
         </div>
         <div class="slidecontainer">
           <input type="range" min="1" max="20" checked="1" class="slider" id="myRange">
@@ -39,29 +39,25 @@
 
 <ul>
   <li>
-    <input id="upperalpha1" type="checkbox"  >
-    <label for="upperalpha1">Includes Uppercase Letters</label>
+    <input id="upperalpha" type="checkbox"  >
+    <label for="upperalpha">Includes Uppercase Letters</label>
   </li>
   <li>
-    <input id="loweralpha1" type="checkbox" >
-    <label for="loweralpha1">Includes Lowercase Letters</label>
+    <input id="loweralpha" type="checkbox" >
+    <label for="loweralpha">Includes Lowercase Letters</label>
   </li>
   <li>
-    <input id="numbers1" type="checkbox" >
-    <label for="numbers1">Includes Numbers</label>
+    <input id="numbers" type="checkbox" >
+    <label for="numbers">Includes Numbers</label>
   </li>
   <li>
-    <input id="symbols1" type="checkbox" >
-    <label for="symbols1">Includes Symbols</label>
+    <input id="symbols" type="checkbox" >
+    <label for="symbols">Includes Symbols</label>
   </li>
 </ul>
 
-<div id="strength_of_password" class="flex items-center justify-around w-full">
-  <p>Strength</p>
-  <div id="strength_color" class="rounded-full bg-black w-5 h-5"></div>
-</div>
-<div>
-          <button id="generate_password">Generate Password</button>
+<div class="mt-2">
+          <button class="border py-1 px-2 rounded hover:scale-105"id="generate_password">Generate Password</button>
           
           </div>
       </div>

@@ -2,6 +2,10 @@
 
 This project is a web-based random password generator. It allows users to generate strong passwords with options to include uppercase letters, lowercase letters, numbers, and symbols. The generated password can be easily copied to the clipboard for use.
 
+## Live Demo
+
+You can access the live demo of the project [here](https://aayushgoyal00.github.io/Password_Generator/).
+
 ## Features
 
 - **Generate Strong Passwords**: Customize the length (up to 20 characters) and character sets (uppercase, lowercase, numbers, symbols) for your password.
